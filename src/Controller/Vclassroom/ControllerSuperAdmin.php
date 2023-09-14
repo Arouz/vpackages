@@ -1079,10 +1079,10 @@ class ControllerSuperAdmin extends Controller
         $accountConfirmationLink = $confirmationLinkString;
         $emailTtemplateBody = $userLang . $emailTemplateBodyString;
 
-        if (is_dir(__DIR__ . "/../../../../../openClassroom")) {
-            i18next::init($userLang, __DIR__ . "/../../../../../openClassroom/classroom/assets/lang/__lng__/ns.json");
+        if (is_dir(__DIR__ . "/../../../../../../openClassroom")) {
+            i18next::init($userLang, __DIR__ . "/../../../../../../openClassroom/classroom/assets/lang/__lng__/ns.json");
         } else {
-            i18next::init($userLang, __DIR__ . "/../../../../../classroom/assets/lang/__lng__/ns.json");
+            i18next::init($userLang, __DIR__ . "/../../../../../../classroom/assets/lang/__lng__/ns.json");
         }
 
         $emailSubject = i18next::getTranslation($emailSubjectString);

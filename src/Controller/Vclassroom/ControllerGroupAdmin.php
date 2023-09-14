@@ -148,10 +148,10 @@ class ControllerGroupAdmin extends Controller
                             $emailTtemplateBody = $userLang . "_confirm_account";
 
                             // init i18next instance
-                            if (is_dir(__DIR__ . "/../../../../../openClassroom")) {
-                                i18next::init($userLang, __DIR__ . "/../../../../../openClassroom/classroom/assets/lang/__lng__/ns.json");
+                            if (is_dir(__DIR__ . "/../../../../../../openClassroom")) {
+                                i18next::init($userLang, __DIR__ . "/../../../../../../openClassroom/classroom/assets/lang/__lng__/ns.json");
                             } else {
-                                i18next::init($userLang, __DIR__ . "/../../../../../classroom/assets/lang/__lng__/ns.json");
+                                i18next::init($userLang, __DIR__ . "/../../../../../../classroom/assets/lang/__lng__/ns.json");
                             }
 
                             $emailSubject = i18next::getTranslation('manager.users.mail.finalizeAccount.subject');
@@ -366,10 +366,10 @@ class ControllerGroupAdmin extends Controller
                                 // create the confirmation account link and set the email template to be used      
                                 $emailTtemplateBody = $userLang . "_confirm_account";
 
-                                if (is_dir(__DIR__ . "/../../../../../openClassroom")) {
-                                    i18next::init($userLang, __DIR__ . "/../../../../../openClassroom/classroom/assets/lang/__lng__/ns.json");
+                                if (is_dir(__DIR__ . "/../../../../../../openClassroom")) {
+                                    i18next::init($userLang, __DIR__ . "/../../../../../../openClassroom/classroom/assets/lang/__lng__/ns.json");
                                 } else {
-                                    i18next::init($userLang, __DIR__ . "/../../../../../classroom/assets/lang/__lng__/ns.json");
+                                    i18next::init($userLang, __DIR__ . "/../../../../../../classroom/assets/lang/__lng__/ns.json");
                                 }
 
                                 $emailSubject = i18next::getTranslation('manager.group.join.mail.emailSubject');
@@ -1072,10 +1072,10 @@ class ControllerGroupAdmin extends Controller
         $emailTtemplateBody = $userLang . "_confirm_account";
 
         // init i18next instance
-        if (is_dir(__DIR__ . "/../../../../../openClassroom")) {
-            i18next::init($userLang, __DIR__ . "/../../../../../openClassroom/classroom/assets/lang/__lng__/ns.json");
+        if (is_dir(__DIR__ . "/../../../../../../openClassroom")) {
+            i18next::init($userLang, __DIR__ . "/../../../../../../openClassroom/classroom/assets/lang/__lng__/ns.json");
         } else {
-            i18next::init($userLang, __DIR__ . "/../../../../../classroom/assets/lang/__lng__/ns.json");
+            i18next::init($userLang, __DIR__ . "/../../../../../../classroom/assets/lang/__lng__/ns.json");
         }
 
         $emailSubject = i18next::getTranslation('classroom.register.accountConfirmationEmail.emailSubject');
@@ -1104,10 +1104,10 @@ class ControllerGroupAdmin extends Controller
         $emailTtemplateBody = $userLang . "_confirm_account";
 
         // init i18next instance
-        if (is_dir(__DIR__ . "/../../../../../openClassroom")) {
-            i18next::init($userLang, __DIR__ . "/../../../../../openClassroom/classroom/assets/lang/__lng__/ns.json");
+        if (is_dir(__DIR__ . "/../../../../../../openClassroom")) {
+            i18next::init($userLang, __DIR__ . "/../../../../../../openClassroom/classroom/assets/lang/__lng__/ns.json");
         } else {
-            i18next::init($userLang, __DIR__ . "/../../../../../classroom/assets/lang/__lng__/ns.json");
+            i18next::init($userLang, __DIR__ . "/../../../../../../classroom/assets/lang/__lng__/ns.json");
         }
 
         $emailSubject = i18next::getTranslation('manager.users.mail.finalizeAccount.subject');
@@ -1138,10 +1138,10 @@ class ControllerGroupAdmin extends Controller
         $accountConfirmationLink = $_ENV['VS_HOST'] . "/classroom/password_manager.php?page=update&token=$token";
         $emailTtemplateBody = $userLang . "_confirm_account";
 
-        if (is_dir(__DIR__ . "/../../../../../openClassroom")) {
-            i18next::init($userLang, __DIR__ . "/../../../../../openClassroom/classroom/assets/lang/__lng__/ns.json");
+        if (is_dir(__DIR__ . "/../../../../../../openClassroom")) {
+            i18next::init($userLang, __DIR__ . "/../../../../../../openClassroom/classroom/assets/lang/__lng__/ns.json");
         } else {
-            i18next::init($userLang, __DIR__ . "/../../../../../classroom/assets/lang/__lng__/ns.json");
+            i18next::init($userLang, __DIR__ . "/../../../../../../classroom/assets/lang/__lng__/ns.json");
         }
 
         $emailSubject = i18next::getTranslation('manager.users.mail.resetPassword.subject');

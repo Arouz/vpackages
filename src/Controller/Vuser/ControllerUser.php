@@ -1343,10 +1343,10 @@ class ControllerUser extends Controller
                 $emailTtemplateBody = $userLang . "_confirm_account";
 
                 // init i18next instance
-                if (is_dir(__DIR__ . "/../../../../../openClassroom")) {
-                    i18next::init($userLang, __DIR__ . "/../../../../../openClassroom/classroom/assets/lang/__lng__/ns.json");
+                if (is_dir(__DIR__ . "/../../../../../../openClassroom")) {
+                    i18next::init($userLang, __DIR__ . "/../../../../../../openClassroom/classroom/assets/lang/__lng__/ns.json");
                 } else {
-                    i18next::init($userLang, __DIR__ . "/../../../../../classroom/assets/lang/__lng__/ns.json");
+                    i18next::init($userLang, __DIR__ . "/../../../../../../classroom/assets/lang/__lng__/ns.json");
                 }
 
                 $emailSubject = i18next::getTranslation('classroom.register.accountConfirmationEmail.emailSubject');
@@ -1494,10 +1494,10 @@ class ControllerUser extends Controller
                     $emailTtemplateBody = $userLang . "_confirm_email_update";
 
                     // init i18next instance
-                    if (is_dir(__DIR__ . "/../../../../../openClassroom")) {
-                        i18next::init($userLang, __DIR__ . "/../../../../../openClassroom/classroom/assets/lang/__lng__/ns.json");
+                    if (is_dir(__DIR__ . "/../../../../../../openClassroom")) {
+                        i18next::init($userLang, __DIR__ . "/../../../../../../openClassroom/classroom/assets/lang/__lng__/ns.json");
                     } else {
-                        i18next::init($userLang, __DIR__ . "/../../../../../classroom/assets/lang/__lng__/ns.json");
+                        i18next::init($userLang, __DIR__ . "/../../../../../../classroom/assets/lang/__lng__/ns.json");
                     }
 
                     $emailSubject = i18next::getTranslation('classroom.updateUserInfos.emailUpdateConfirmation.emailSubject');

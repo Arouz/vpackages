@@ -19,7 +19,7 @@ class UsersLinkApplications
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="Vittascience\Entity\Vclassroom\User")
+     * @ORM\ManyToOne(targetEntity="Vittascience\Entity\Vuser\User")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id", onDelete="CASCADE", nullable=false)
      * @var User
      */

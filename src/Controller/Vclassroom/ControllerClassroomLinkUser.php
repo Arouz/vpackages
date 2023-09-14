@@ -5,11 +5,12 @@ namespace Vittascience\Controller\Vclassroom;
 use DAO\RegularDAO;
 use Vittascience\Entity\Vuser\User;
 use Vittascience\Entity\Vuser\ClassroomUser;
+use Vittascience\Entity\Vclassroom\Classroom;
+use Vittascience\Traits\Vclassroom\UtilsTrait;
 use Vittascience\Entity\Vclassroom\Applications;
 use Vittascience\Entity\Vclassroom\ActivityLinkUser;
 use Vittascience\Entity\Vclassroom\ClassroomLinkUser;
 use Vittascience\Entity\Vclassroom\ActivityLinkClassroom;
-use Vittascience\Traits\Vclassroom\UtilsTrait;
 
 class ControllerClassroomLinkUser extends Controller
 {

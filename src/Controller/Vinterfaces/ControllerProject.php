@@ -1089,7 +1089,7 @@ class ControllerProject extends Controller
                 $link = !empty($_POST['link']) ? $_POST['link'] : '';
                 //$project = $this->entityManager->getRepository(Project::class)->findOneBy(array("link" => $link));
                 $iss = "https://{$_SERVER['HTTP_HOST']}";
-                $privateKey = file_get_contents(__DIR__ . "/../../../../../temporaryKeys/rtcPrivateKey.pem");
+                $privateKey = file_get_contents(__DIR__ . "/../../../../../../temporaryKeys/rtcPrivateKey.pem");
                 
                 $kid = "rtc";
 
@@ -1168,7 +1168,7 @@ class ControllerProject extends Controller
                 //$link = !empty($_POST['link']) ? htmlspecialchars(strip_tags(trim($_POST['link']))) : null;
                 $project = $this->entityManager->getRepository(Project::class)->findOneBy(array("link" => $link));
                 $iss = "https://{$_SERVER['HTTP_HOST']}";
-                $privateKey = file_get_contents(__DIR__ . "/../../../../../temporaryKeys/rtcPrivateKey.pem");
+                $privateKey = file_get_contents(__DIR__ . "/../../../../../../temporaryKeys/rtcPrivateKey.pem");
 
                 $kid = "rtc";
 

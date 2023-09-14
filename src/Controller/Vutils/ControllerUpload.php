@@ -78,7 +78,7 @@ class ControllerUpload
          $resourceUploadDir = !empty($this->envVariables['VS_RESOURCE_UPLOAD_DIR'])
             ? $this->envVariables['VS_RESOURCE_UPLOAD_DIR']
             : 'public/content/user_data/resources';
-        $uploadDir = __DIR__ . "/../../../../../$resourceUploadDir";
+        $uploadDir = __DIR__ . "/../../../../../../$resourceUploadDir";
 
         $success = move_uploaded_file($imageTempName, "$uploadDir/$filenameToUpload");
 
@@ -144,7 +144,7 @@ class ControllerUpload
                             ? $this->envVariables['VS_RESOURCE_UPLOAD_DIR'] 
                             : 'public/content/user_data/resources';
 
-        $uploadDir = __DIR__ . "/../../../../../$resourceUploadDir";
+        $uploadDir = __DIR__ . "/../../../../../../$resourceUploadDir";
 
         unlink("$uploadDir/$filename");
         $this->entityManager->remove($userImg);
@@ -197,7 +197,7 @@ class ControllerUpload
         $resourceUploadDir = !empty($this->envVariables['VS_RESOURCE_UPLOAD_DIR'])
                                 ? $this->envVariables['VS_RESOURCE_UPLOAD_DIR']
                                 : 'public/content/user_data/resources';
-        $uploadDir = __DIR__ . "/../../../../../$resourceUploadDir";
+        $uploadDir = __DIR__ . "/../../../../../../$resourceUploadDir";
         $success = move_uploaded_file($fileTempName, "$uploadDir/$filenameToUpload");
 
         // something went wrong while storing the file, return an error

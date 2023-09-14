@@ -1,0 +1,20 @@
+{
+    "name": "vittascience/vpackages",
+    "description": "vittascience packages",
+    "authors": [{
+        "name": "COINTE Rémi",
+        "email": "remi.cointe@vittascience.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vittascience\\": "src/"
+        },
+        "psr-0": {
+            "Vittascience\\": "src/"
+        }
+    }
+}
